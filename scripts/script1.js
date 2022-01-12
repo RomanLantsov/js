@@ -35,11 +35,13 @@
 //   case 2: case 3: alert('Вы ввели число 2, а может и 3');
 // }
 
-function min(a,b){
-  return a<b?a:b
+function min(a, b) {
+  return a < b ? a : b;
 }
 
+function pow(x, n) {
+  while (--n > 0) x *= x;
+  return x;
+}
 
-console.log(`a = ${3}, b = ${1}:  ${min(3,1)}`)
-console.log(`a = ${-2}, b = ${1}:  ${min(3,1)}`)
-console.log(`a = ${1}, b = ${1}:  ${min(3,1)}`)
+console.log(pow(3, 3));
