@@ -83,6 +83,20 @@ console.log(user.hi);
 (user.name == "Джон" ? user.hi : user.bye)(); // Ошибка!
  */
 
+/* //Логорифмы
+ alert(user1.name);
+function min(a, b) {
+  return a < b ? a : b;
+}
+
+function pow(x, n) {
+  while (--n > 0) x *= x;
+  return x;
+}
+
+console.log(pow(3, 3));
+ */
+
 class user {
   constructor(name) {
     this.name = name;
@@ -91,4 +105,3 @@ class user {
 }
 
 let user1 = new user("John");
-alert(user1.name);
