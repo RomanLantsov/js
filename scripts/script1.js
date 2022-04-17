@@ -34,7 +34,7 @@
 //   case 1:  alert('Вы ввели число 1'); break;
 //   case 2: case 3: alert('Вы ввели число 2, а может и 3');
 // }
-
+/* 
 function min(a, b) {
   return a < b ? a : b;
 }
@@ -45,3 +45,4 @@ function pow(x, n) {
 }
 
 console.log(pow(3, 3));
+ */

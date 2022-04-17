@@ -1,0 +1,27 @@
+.element{
+    display: block;
+    
+    color: chartreuse;
+
+    width: 200px;
+    height: 200px ;
+    padding: 25px;
+
+    border: 10px solid rgb(255, 255, 255);
+
+    margin: 50px;
+
+
+}
+
+
+.first{
+    background-color: darkslategrey;
+    box-sizing: border-box;
+}
+
+.second {
+    background-color:lightslategrey;
+    box-sizing: content-box;
+
+}
