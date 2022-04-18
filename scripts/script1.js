@@ -1,5 +1,9 @@
 "use strict";
 
+function co(text){
+  console.log(text)
+}
+
 // let login, password;
 // login = prompt("Логин: ");
 // if (login === null | login === '') alert("Отменено");
@@ -46,3 +50,14 @@ function pow(x, n) {
 
 console.log(pow(3, 3));
  */
+
+let bodyElement = document.body;
+co(bodyElement.hasChildNodes)
+co(bodyElement.childNodes)
+
+co(bodyElement.previousElementSibling)
+co(bodyElement.nextElementSibling)
+co(bodyElement.children)
+co(document.querySelectorAll(".bg-yellow")) /// static collections
+co(document.getElementsByClassName(".bg-yellow")) /// live collections
+
