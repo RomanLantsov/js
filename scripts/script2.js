@@ -429,26 +429,112 @@ function findSum(...args){
 
 co(findSum(1,-2,3,5)) */
 
-class PowerArray extends Array{
-  isEmpty(){
-    return this.length === 0;
-  }
+// class PowerArray extends Array{
+//   isEmpty(){
+//     return this.length === 0;
+//   }
   
-  //static get [Symbol.species](){return Array}
+//   //static get [Symbol.species](){return Array}
+// }
+// let arr1 = new Array(1,2,3,4,5);
+// let arr2 = new PowerArray(1,2,3,4,5);
+// co(arr1);
+
+// let arr3 = arr2.map((val)=>val*2)
+// co(arr3.__proto__.constructor)
+// co(arr3.constructor)
+// co(Array)
+// co(Date)
+//  co(arr2 instanceof PowerArray)
+//  co(arr2 instanceof Array)
+//  co(arr2 instanceof Object)
+//  co(arr2.__proto__.toString())
+
+//  let obj1 = {a:1};
+//  co(toString.call(obj1))
+
+
+//  let user = {
+//    'login':'',
+//    'password':'',
+//    'validatePassword': function(){
+//      if (this.password.length > 6){
+//        return true;
+//      }
+//      else{
+//        return false;
+//      }
+//    },
+
+//  }
+
+// let user_profile = {
+//   "username": '',
+//   "photo": '',
+//   "age": 0,
+//   __proto__: user
+// }
+
+class User {
+  constructor( login){
+     this.login = login;
+  }
+
+  #ValidateText = 'Not enough strong password! '
+
+  set password(pass){
+     this._password = pass.trim();
+     if (!this.validatePassword()){
+       alert(this.#ValidateText);
+       this._password = undefined;
+     }
+
+  }
+
+  get password(){
+    return this._password;
+  }
+
+ 
+
+   validatePassword(){
+      if (this._password.length > 6){
+       return true;
+     }
+     else{
+       return false;
+     }
+   }
+
 }
-let arr1 = new Array(1,2,3,4,5);
-let arr2 = new PowerArray(1,2,3,4,5);
-co(arr1);
 
-let arr3 = arr2.map((val)=>val*2)
-co(arr3.__proto__.constructor)
-co(arr3.constructor)
-co(Array)
-co(Date)
- co(arr2 instanceof PowerArray)
- co(arr2 instanceof Array)
- co(arr2 instanceof Object)
- co(arr2.__proto__.toString())
+class Student extends User{
+  constructor(login,nickname){
+    super(login);
+    this.nickname = nickname;
+  }
+  validatePassword(){
+    super.validatePassword();
+    if (this._password.length > 10){
+      return true;
+    }
+    else{
+      return false;
+    } 
+  }
 
- let obj1 = {a:1};
- co(toString.call(obj1))
+}
+
+
+
+let person1 = new User('ivan');
+person1.password = ' 12345 ' 
+
+co(person1);
+co(person1.password)
+co(person1.test)
+let student1 = new Student('Igor', 'megasuperman');
+student1.password = '12345678910'
+
+
+co(student1);
