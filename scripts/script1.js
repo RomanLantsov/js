@@ -34,6 +34,7 @@
 //   case 1:  alert('Вы ввели число 1'); break;
 //   case 2: case 3: alert('Вы ввели число 2, а может и 3');
 // }
+<<<<<<< HEAD
 
 /*
 let ask = (header, acceptFunc, cancelFunc) =>
@@ -85,6 +86,9 @@ console.log(user.hi);
 
 /* //Логорифмы
  alert(user1.name);
+=======
+/* 
+>>>>>>> 0c4ccc5edfcecde757a09e6debb4dfcb8156b421
 function min(a, b) {
   return a < b ? a : b;
 }
@@ -95,6 +99,7 @@ function pow(x, n) {
 }
 
 console.log(pow(3, 3));
+<<<<<<< HEAD
  */
 
 class user {
@@ -105,3 +110,6 @@ class user {
 }
 
 let user1 = new user("John");
+=======
+ */
+>>>>>>> 0c4ccc5edfcecde757a09e6debb4dfcb8156b421
