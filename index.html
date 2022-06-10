@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles2.css" />
-<<<<<<< HEAD
 
     <link
       rel="apple-touch-icon"
@@ -27,134 +26,32 @@
       href="IMGS/favicon-16x16.png"
     />
     <link rel="manifest" href="IMGS/site.webmanifest" />
-
-    <!-- добавим стили mocha для отображения результатов -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css"
-    />
-    <!-- добавляем сам фреймворк mocha -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
-    <script>
-      // включаем режим тестирования в стиле BDD
-      mocha.setup("bdd");
-    </script>
-    <!-- добавим chai -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
-    <script>
-      // chai предоставляет большое количество функций. Объявим assert глобально
-      let assert = chai.assert;
-    </script>
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="IMGS/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="IMGS/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="IMGS/favicon-16x16.png"
-    />
-    <link rel="manifest" href="IMGS/site.webmanifest" />
-  </head>
-  <body style="background-color: #232529">
-    <nav><a href="cv.html">CV</a> <a href="notes.html">notes</a></nav>
-
-    <div class="element first">
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-    </div>
-
-    <div class="element second">
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-    </div>
-
-    <div class="abbout">
-      <div class="about__body">
-        <div class="about__header">
-          <div class="about__title title">ABOUT</div>
-          <div class="about__text"></div>
-        </div>
-        <div class="about__row">
-          <div class="item-about">
-            <div class="item-about_icon">
-              <img src="IMGS/about/01.png" alt="" />
-            </div>
-            <div class="item-about_title">WEB</div>
-            <div class="item-about_text"></div>
-          </div>
-          <div class="item-about">
-            <div class="item-about_icon">
-              <img src="IMGS/about/02.png" alt="" />
-            </div>
-            <div class="item-about_title">IOS and ANDROID</div>
-            <div class="item-about_text"></div>
-          </div>
-          <div class="item-about">
-            <div class="item-about_icon">
-              <img src="IMGS/about/03.png" alt="" />
-            </div>
-            <div class="item-about_title">MARKETING</div>
-            <div class="item-about_text"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="scripts/script2.js"></script>
-=======
- 
-    <link rel="apple-touch-icon" sizes="180x180" href="IMGS/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="IMGS/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="IMGS/favicon-16x16.png">
-    <link rel="manifest" href="IMGS/site.webmanifest">
- 
   </head>
   <!-- <body style="background-color: #e37900e9;"> -->
-  <body  >
- 
+  <body>
     <div id="button1"></div>
     <div id="button2"></div>
     <div id="button3"></div>
 
-  <script src="scripts/script2.js"></script>
-  <script src="./components/less3/Button.js"></script>
+    <script src="scripts/script2.js"></script>
+    <script src="./components/less3/Buttons.js"></script>
 
-  <script>
-    let bigButton = new Button('100px','50px','#06767669', 'hello!');
-    let bigModernButton = new ModernButton('100px','50px','#e37900e9', 'hello!');
-    bigButton.insertButtonToElement("button1");
-    bigModernButton.insertButtonToElement("button2");
-    bigModernButton.insertButtonToElement("button3");
-  </script>
+    <script>
+      let bigButton = new Button("100px", "50px", "#06767669", "hello!");
+      bigButton.clickEvent = () => {
+        co(promice);
+      };
+      bigButton.insertButtonToElement("button1");
 
- 
-
->>>>>>> 9325d77f40f259a57813410e12265f27379b3d3f
+      // let bigModernButton = new ModernButton(
+      //   "100px",
+      //   "50px",
+      //   "#e37900e9",
+      //   "hello!"
+      // );
+      // bigModernButton.clickEvent = co_this;
+      // bigModernButton.insertButtonToElement("button2");
+      // bigModernButton.insertButtonToElement("button3");
+    </script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 
 body {
-  background-color: #232529;
+  /* background-color: #232529; */
   color: #949494da;
   font-size: 18px;
   font-weight: 900;
@@ -77,16 +77,16 @@ ul {
   background: transparent;
   font-family: inherit;
 }
- 
+
 .about__row {
   background: rgba(179, 255, 0, 0.455);
   height: 800px;
   display: flex;
-  flex-direction:  row;
-  justify-content:  space-around   ;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.item-about{
+.item-about {
   border-radius: 15px;
   background: rgb(0, 118, 106);
   width: 200px;

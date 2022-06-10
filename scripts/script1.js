@@ -1,9 +1,5 @@
 "use strict";
 
-function co(text){
-  console.log(text)
-}
-
 // let login, password;
 // login = prompt("Логин: ");
 // if (login === null | login === '') alert("Отменено");
@@ -38,7 +34,6 @@ function co(text){
 //   case 1:  alert('Вы ввели число 1'); break;
 //   case 2: case 3: alert('Вы ввели число 2, а может и 3');
 // }
-<<<<<<< HEAD
 
 /*
 let ask = (header, acceptFunc, cancelFunc) =>
@@ -90,9 +85,6 @@ console.log(user.hi);
 
 /* //Логорифмы
  alert(user1.name);
-=======
-/* 
->>>>>>> 0c4ccc5edfcecde757a09e6debb4dfcb8156b421
 function min(a, b) {
   return a < b ? a : b;
 }
@@ -103,8 +95,6 @@ function pow(x, n) {
 }
 
 console.log(pow(3, 3));
-<<<<<<< HEAD
-<<<<<<< HEAD
  */
 
 class user {
@@ -115,20 +105,3 @@ class user {
 }
 
 let user1 = new user("John");
-=======
- */
->>>>>>> 0c4ccc5edfcecde757a09e6debb4dfcb8156b421
-=======
- */
-
-let bodyElement = document.body;
-co(bodyElement.hasChildNodes)
-co(bodyElement.childNodes)
-
-co(bodyElement.previousElementSibling)
-co(bodyElement.nextElementSibling)
-co(bodyElement.children)
-co(document.querySelectorAll(".bg-yellow")) /// static collections
-co(document.getElementsByClassName(".bg-yellow")) /// live collections
-
->>>>>>> 9325d77f40f259a57813410e12265f27379b3d3f
