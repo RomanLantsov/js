@@ -25,3 +25,16 @@
     box-sizing: content-box;
 
 }
+
+table, th, td {
+    border: 1px solid lightslategrey;
+    border-collapse: collapse;
+    color: rgb(30, 40, 40);    
+    text-align: center;
+}
+
+.colorClock{}
+.colorClock_hh{color: brown;}
+.colorClock_mm{color: olivedrab;}
+.colorClock_ss{color: dodgerblue;}
+ 
