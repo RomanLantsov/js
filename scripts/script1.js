@@ -1,9 +1,5 @@
 "use strict";
 
-function co(text){
-  console.log(text)
-}
-
 // let login, password;
 // login = prompt("Логин: ");
 // if (login === null | login === '') alert("Отменено");
@@ -38,7 +34,57 @@ function co(text){
 //   case 1:  alert('Вы ввели число 1'); break;
 //   case 2: case 3: alert('Вы ввели число 2, а может и 3');
 // }
-/* 
+
+/*
+let ask = (header, acceptFunc, cancelFunc) =>
+  confirm(header) ? acceptFunc() : cancelFunc();
+
+ask(
+  "are u accepte this!?",
+  () => alert("Mhahahaaa! Accepted!!!"),
+  () => alert("hate u!")
+);
+*/
+
+/*
+let a = prompt("Введите число");
+a = Number(a);
+isNaN(a) ? alert("Введено не числовое значение") : alert(2 * a);
+*/
+
+// function pow(a, b) {
+//   let res = 1;
+//   for (let i = 0; i < b; i++) {
+//     res *= a;
+//   }
+//   return res;
+// }
+
+// let Student = { name: "John", age: 20, gender: "male" };
+// Student.id = "123213";
+// alert(Student.id);
+// delete Student.id;
+
+/* let user = {
+  name: "Джон",
+  hi() {
+    alert(this.name);
+  },
+  bye: function bye() {
+    alert("bye!");
+  },
+};
+
+//user.hi(); // Джон (простой вызов метода работает хорошо)
+console.log(user.hi);
+
+// теперь давайте попробуем вызывать user.hi или user.bye
+// в зависимости от имени пользователя user.name
+(user.name == "Джон" ? user.hi : user.bye)(); // Ошибка!
+ */
+
+/* //Логорифмы
+ alert(user1.name);
 function min(a, b) {
   return a < b ? a : b;
 }
@@ -51,13 +97,11 @@ function pow(x, n) {
 console.log(pow(3, 3));
  */
 
-let bodyElement = document.body;
-co(bodyElement.hasChildNodes)
-co(bodyElement.childNodes)
+class user {
+  constructor(name) {
+    this.name = name;
+    this.admin = false;
+  }
+}
 
-co(bodyElement.previousElementSibling)
-co(bodyElement.nextElementSibling)
-co(bodyElement.children)
-co(document.querySelectorAll(".bg-yellow")) /// static collections
-co(document.getElementsByClassName(".bg-yellow")) /// live collections
-
+let user1 = new user("John");

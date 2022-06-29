@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function main(add){
      
     co(`im ok! :D ${add}` )
@@ -8,3 +9,8 @@ function justAnotherAsincFunc(){
 }
 
   
+=======
+function newFunction() {
+  co("Its 'newFunction' call!");
+}
+>>>>>>> 19aed65212161cbfe8bff62f6bcc96fe4d001652
